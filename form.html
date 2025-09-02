@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<body style="background-color: chartreuse;">
+    <form action="">
+    <p> <label>Nama Lengkap</label> <br>
+    <input type="text" required>
+    </p>
+    <p>
+        <label>NIS/NISN</label> <br>
+    <input type="text" required>
+    </p>
+    <p>Jenis Kelamin <br>
+       <input type="radio" value="Laki-laki"> <label>Laki-laki</label required>
+       <input type="radio" value="Perempuan"> <label>Perempuan</label required>
+    </p>
+    <p>
+        Tempat Lahir <br>
+        <input type="text" required>
+    </p>
+    <p>
+        Tanggal Lahir <br>
+        <input type="date" value="Tanggal Lahir" required  >
+    </p>
+    <p>
+        Alamat <br>
+        <textarea name="alamat" id="alamat"></textarea required>
+    </p>
+    <p>
+        Nomor Telepon <br>
+        <input type="text" required>
+    </p>
+    <p>
+        Email <br>
+        <input type="email" name="email" r>
+    </p>
+    <p>
+        Jurusan Yang Dipilih <br>
+        <select style="background-color: yellowgreen;">
+        <option value="RPL">RPL</option>
+        <option value="TJKT">TJKT</option></select>
+    </p>
+    <p>
+        Upload Foto <br>
+        <input type="file" name="file">
+    </p>
+        <input type="submit" value="kirim">
+        <input type="reset">
+        </form>
+</body>
+</html>
