@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tabungan.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    body{
+        text-align: center;
+        background-color: bisque;
+    }
+</style>
+<body>
+    <div class="container">
+    <form action="tabungan.php" method="post" enctype="multipart/form-data">
+        <h1>Tabungan</h1>
+            <div class="info">
+                <label>Saldo Awal:</label>
+                <input type="number" name="saldo" placeholder="Isi Dong" required>
+            </div>
+            <div class="info">
+                <label>Besar Bunga:</label>
+                <input type="number" name="bunga" placeholder="Isi Dong" required>
+            </div>
+            <div class="info">
+                <label>Biaya Administrasi:</label>
+                <input type="number" name="administrasi" placeholder="Isi Dong" required>
+            </div>
+            <div class="button">
+                <input type="submit" value="Kirim">
+                <input type="reset" value="Reset">
+            </div>
+    </form>
+    </div>
+</body>
+</html>

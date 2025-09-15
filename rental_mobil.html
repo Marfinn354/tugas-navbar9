@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rental.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    body{
+        text-align: center;
+        background-color: bisque;
+    }
+</style>
+<body>
+    <div class="container">
+    <form action="rental_mobil.php" method="post" enctype="multipart/form-data">
+        <h1>Rental Mobil</h1>
+            <div class="info">
+                <label>Berapa Hari Sewa:</label>
+                <input type="number" name="hari" placeholder="Harap Diisi" required>
+            </div>
+            <div class="info">
+                <label for="asuransi">Biaya Asuransi</label>
+                <div class="asuransi">Rp 30.000</div>
+            </div>
+            <div class="info">
+                <label for="supir">Biaya Supir</label>
+                <div class="supir">Rp 150.000</div>
+            </div>
+            <div class="select">
+                <label>Pilihan Mobil</label>
+                <select name="mobil" required>
+                    <option value="" disabled selected>Pilih Mobil</option>
+                    <option value="Avanza">Avanza</option>
+                    <option value="Kijang">Kijang</option>
+                </select>
+            </div>
+
+            <div class="button">
+                <input type="submit" value="Kirim">
+                <input type="reset" value="Reset">
+            </div>
+    </form>
+    </div>
+</body>
+</html>
